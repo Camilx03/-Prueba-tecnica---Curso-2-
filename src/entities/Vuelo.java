@@ -30,7 +30,7 @@ public class Vuelo {
     @Override
     public String toString() {
         //Usamos String.format para que los datos salgan en columnas ordenadas
-        return String.format("ID: %-3d | %-10s | %-15s | %s -> %s | Salida: %s",
-                id, nombreVuelo, empresa, lugarSalida, lugarLLegada, fechaSalida);
+        return String.format("ID: %-3d | %-8s | %-12s | %-12s -> %-15s | Salida: %s | Llegada: %s",
+                id, nombreVuelo, empresa, lugarSalida, lugarLLegada, fechaSalida, fechaLLegada);
     }
 }
